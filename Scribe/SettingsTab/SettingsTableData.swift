@@ -24,6 +24,17 @@ struct SettingsTableData {
 
   static var languageSettingsData: [ParentTableCellModel] = [
     ParentTableCellModel(
+      headingTitle: "Translation source language", 
+      section: [
+        Section(
+          sectionTitle: "System Language",
+          imageString: "globe", hasToggle: false,
+          sectionState: .none(.none)
+        )
+      ],
+      hasDynamicData: nil
+    ),
+    ParentTableCellModel(
       headingTitle: "Layout",
       section: [
         Section(
