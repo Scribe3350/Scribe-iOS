@@ -15,6 +15,7 @@ struct Section {
   let sectionTitle: String
   let imageString: String
   let hasToggle: Bool
+  var hasChevronLabel: Bool? = false
   let sectionState: SectionState
 }
 

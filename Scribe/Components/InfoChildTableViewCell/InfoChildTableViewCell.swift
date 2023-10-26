@@ -10,6 +10,7 @@ class InfoChildTableViewCell: UITableViewCell {
 
   @IBOutlet var chevronImgView: UIImageView!
   @IBOutlet var toggleSwitch: UISwitch!
+  @IBOutlet var chevronLabel: UILabel!
 
   var section: Section?
   var parentSection: Section?
@@ -35,6 +36,7 @@ class InfoChildTableViewCell: UITableViewCell {
     titleLabel.text = section.sectionTitle
     iconImageView.image = UIImage.availableIconImage(with: section.imageString)
 
+    chevronLabel.text = "test"
     if !section.hasToggle {
       toggleSwitch.isHidden = true
     } else {

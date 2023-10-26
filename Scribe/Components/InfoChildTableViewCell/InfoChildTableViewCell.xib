@@ -43,6 +43,15 @@
                         <color key="textColor" name="keyChar"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRk-Vd-Zkj" userLabel="Chevron Label">
+                        <rect key="frame" x="232" y="14" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Dss-kL-Yv1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-yb-cab">
                         <rect key="frame" x="255" y="8" width="51" height="34"/>
                         <constraints>
@@ -58,19 +67,23 @@
                     <constraint firstItem="c3b-Ee-Sjz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="OFN-MG-1LO"/>
                     <constraint firstAttribute="bottom" secondItem="XI7-83-3eC" secondAttribute="bottom" constant="14" id="R4Y-ld-ZrN"/>
                     <constraint firstItem="JHo-c6-kU1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="ZI3-Hg-4Z0"/>
+                    <constraint firstItem="nRk-Vd-Zkj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="aLP-nK-uxo"/>
                     <constraint firstItem="FbK-yb-cab" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="co0-nN-Poh"/>
                     <constraint firstAttribute="bottom" secondItem="FbK-yb-cab" secondAttribute="bottom" constant="8" id="e0D-ba-cEF"/>
+                    <constraint firstAttribute="bottom" secondItem="nRk-Vd-Zkj" secondAttribute="bottom" constant="15" id="fwV-Ti-4v7"/>
                     <constraint firstItem="XI7-83-3eC" firstAttribute="leading" secondItem="JHo-c6-kU1" secondAttribute="trailing" constant="16" id="hea-p2-0IU"/>
                     <constraint firstAttribute="bottom" secondItem="c3b-Ee-Sjz" secondAttribute="bottom" constant="15" id="iz6-l0-L8h"/>
                     <constraint firstAttribute="bottom" secondItem="JHo-c6-kU1" secondAttribute="bottom" constant="12" id="jbW-xC-URt"/>
                     <constraint firstAttribute="trailing" secondItem="FbK-yb-cab" secondAttribute="trailing" constant="16" id="kzi-n0-hcA"/>
                     <constraint firstItem="XI7-83-3eC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ngM-8D-Vif"/>
                     <constraint firstItem="JHo-c6-kU1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="on6-i8-GTD"/>
+                    <constraint firstItem="c3b-Ee-Sjz" firstAttribute="leading" secondItem="nRk-Vd-Zkj" secondAttribute="trailing" constant="10" id="zmc-OQ-Yuo"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="chevronImgView" destination="c3b-Ee-Sjz" id="0NU-PH-88e"/>
+                <outlet property="chevronLabel" destination="nRk-Vd-Zkj" id="6L4-C1-Aiv"/>
                 <outlet property="iconImageView" destination="JHo-c6-kU1" id="iTB-MV-z6M"/>
                 <outlet property="titleLabel" destination="XI7-83-3eC" id="8Oo-On-CWs"/>
                 <outlet property="toggleSwitch" destination="FbK-yb-cab" id="CYZ-wz-okM"/>
